@@ -6,8 +6,8 @@ metadata:
     app: example-service
 spec:
   ports:
-  - port: 80
-    targetPort: 4000
+  - port: 8080
+    nodePort:30001
   type: NodePort
   selector:
     app: example-pod
